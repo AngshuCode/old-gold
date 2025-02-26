@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>What is the Internet?</title>
+</head>
+<body bgcolor="white" text="black">
+
+<!-- Marquee for old-school scrolling text -->
+<marquee behavior="scroll" direction="left">
+    <b>Welcome to Curious Cat's guide: What is the Internet?</b>
+</marquee>
+
+<!-- Simple visitor counter -->
+<script>
+    var count = localStorage.getItem("visitorCount") || 1;
+    document.write("<p><b>Visitor Number: " + count + "</b></p>");
+    localStorage.setItem("visitorCount", Number(count) + 1);
+</script>
+
+<!-- Main Content -->
+<table border="1" width="100%" cellspacing="0">
+    <tr bgcolor="yellow">
+        <td colspan="2" align="center">
+            <h2>What is the Internet?</h2>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%" valign="top" bgcolor="lightgray">
+            <b>Navigation</b>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="how-it-works.html">How It Works</a></li>
+                <li><a href="fun-facts.html">Fun Facts</a></li>
+            </ul>
+        </td>
+        <td valign="top">
+            <p>The <b>Internet</b> is a global network of computers that allows people to share information, communicate, and explore the digital world. It was first developed in the 1960s and became widely accessible in the 1990s.</p>
+            
+            <p><b>Did you know?</b> The first website was created by Tim Berners-Lee in 1991.</p>
+            
+            <p><img src="old-computer.gif" alt="Old Computer" width="150"></p>
+        </td>
+    </tr>
+</table>
+
+<!-- Under Construction GIF -->
+<p align="center">
+    <img src="under_construction.gif" alt="Under Construction">
+</p>
+
+</body>
+</html>
